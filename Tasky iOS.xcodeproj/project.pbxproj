@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B903D319179FED93003370F3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B903D317179FED93003370F3 /* Icon.png */; };
+		B903D31A179FED93003370F3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B903D317179FED93003370F3 /* Icon.png */; };
+		B903D31B179FED93003370F3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B903D318179FED93003370F3 /* Icon@2x.png */; };
+		B903D31C179FED93003370F3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B903D318179FED93003370F3 /* Icon@2x.png */; };
+		B909B5C3178C1CE300145B82 /* Tasky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B909B5C1178C1C9C00145B82 /* Tasky.xcdatamodeld */; };
+		B909B5C4178C1CE400145B82 /* Tasky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B909B5C1178C1C9C00145B82 /* Tasky.xcdatamodeld */; };
+		B909B5C5178C1CE400145B82 /* Tasky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B909B5C1178C1C9C00145B82 /* Tasky.xcdatamodeld */; };
+		B909B5C8178C246500145B82 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = B909B5C7178C246500145B82 /* Task.m */; };
+		B909B5C9178C246500145B82 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = B909B5C7178C246500145B82 /* Task.m */; };
+		B922584D178C0BB5000C8F11 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B922584C178C0BB5000C8F11 /* CoreDataHelper.m */; };
+		B922584E178C0BB5000C8F11 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B922584C178C0BB5000C8F11 /* CoreDataHelper.m */; };
+		B9225850178C0F21000C8F11 /* CoreDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B922584F178C0F21000C8F11 /* CoreDataTest.m */; };
+		B9225852178C10F1000C8F11 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9225851178C10F1000C8F11 /* CoreData.framework */; };
+		B9225853178C10FC000C8F11 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9225851178C10F1000C8F11 /* CoreData.framework */; };
+		B9225854178C10FD000C8F11 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9225851178C10F1000C8F11 /* CoreData.framework */; };
+		B93DD7BC1785B93100B0DD60 /* TaskCollectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B93DD7BB1785B93100B0DD60 /* TaskCollectionTest.m */; };
+		B93DD7C01785CEEF00B0DD60 /* TaskViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B93DD7BF1785CEEF00B0DD60 /* TaskViewTest.m */; };
+		B93DD7C11785CEF800B0DD60 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93DD7BE1785CE9900B0DD60 /* TaskViewController.m */; };
+		B93DD7C21785CEF900B0DD60 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93DD7BE1785CE9900B0DD60 /* TaskViewController.m */; };
+		B968381F17845D4D0063F7F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A2D3DC1784462900BBDE34 /* main.m */; };
+		B968382017845D4D0063F7F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A2D3E01784462900BBDE34 /* AppDelegate.m */; };
+		B968382117845D4D0063F7F6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A2D40A178446DD00BBDE34 /* RootViewController.m */; };
+		B968382317845D4D0063F7F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D3D01784462900BBDE34 /* UIKit.framework */; };
+		B968382417845D4D0063F7F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D3D21784462900BBDE34 /* Foundation.framework */; };
+		B968382517845D4D0063F7F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D3D41784462900BBDE34 /* CoreGraphics.framework */; };
+		B968382717845D4D0063F7F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9A2D3D91784462900BBDE34 /* InfoPlist.strings */; };
+		B968382817845D4D0063F7F6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A2D3E21784462900BBDE34 /* Default.png */; };
+		B968382917845D4D0063F7F6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A2D3E41784462900BBDE34 /* Default@2x.png */; };
+		B968382A17845D4D0063F7F6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A2D3E61784462900BBDE34 /* Default-568h@2x.png */; };
+		B968382B17845D4D0063F7F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A2D40F1784476600BBDE34 /* Main.storyboard */; };
+		B9A2D3D11784462900BBDE34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D3D01784462900BBDE34 /* UIKit.framework */; };
+		B9A2D3D31784462900BBDE34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D3D21784462900BBDE34 /* Foundation.framework */; };
+		B9A2D3D51784462900BBDE34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D3D41784462900BBDE34 /* CoreGraphics.framework */; };
+		B9A2D3DB1784462900BBDE34 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9A2D3D91784462900BBDE34 /* InfoPlist.strings */; };
+		B9A2D3DD1784462900BBDE34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A2D3DC1784462900BBDE34 /* main.m */; };
+		B9A2D3E11784462900BBDE34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A2D3E01784462900BBDE34 /* AppDelegate.m */; };
+		B9A2D3E31784462900BBDE34 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A2D3E21784462900BBDE34 /* Default.png */; };
+		B9A2D3E51784462900BBDE34 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A2D3E41784462900BBDE34 /* Default@2x.png */; };
+		B9A2D3E71784462900BBDE34 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9A2D3E61784462900BBDE34 /* Default-568h@2x.png */; };
+		B9A2D3EF1784462900BBDE34 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D3EE1784462900BBDE34 /* SenTestingKit.framework */; };
+		B9A2D3F01784462900BBDE34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D3D01784462900BBDE34 /* UIKit.framework */; };
+		B9A2D3F11784462900BBDE34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D3D21784462900BBDE34 /* Foundation.framework */; };
+		B9A2D4071784467600BBDE34 /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D4051784467600BBDE34 /* OCHamcrestIOS.framework */; };
+		B9A2D4081784467600BBDE34 /* OCMockitoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A2D4061784467600BBDE34 /* OCMockitoIOS.framework */; };
+		B9A2D40B178446DD00BBDE34 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A2D40A178446DD00BBDE34 /* RootViewController.m */; };
+		B9A2D4111784476600BBDE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A2D40F1784476600BBDE34 /* Main.storyboard */; };
+		B9A2D4131784482D00BBDE34 /* RootViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A2D4121784482D00BBDE34 /* RootViewTest.m */; };
+		B9A683C71797E2E5002206EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9A683C51797E2E5002206EB /* InfoPlist.strings */; };
+		B9A683CA1797E314002206EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9A683C81797E314002206EB /* Localizable.strings */; };
+		B9A683CB1797E314002206EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9A683C81797E314002206EB /* Localizable.strings */; };
+		B9A723C91796D642004CB2EF /* LocalizableStringsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A723C81796D642004CB2EF /* LocalizableStringsTest.m */; };
+		B9AA3D5C1785AF7000273BBB /* TaskCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA3D5B1785AF6D00273BBB /* TaskCollection.m */; };
+		B9AA3D5D1785AF7100273BBB /* TaskCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AA3D5B1785AF6D00273BBB /* TaskCollection.m */; };
+		B9AAD4951784770F00DEA5AB /* Task+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AAD4941784770F00DEA5AB /* Task+Helpers.m */; };
+		B9AAD4961784770F00DEA5AB /* Task+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AAD4941784770F00DEA5AB /* Task+Helpers.m */; };
+		B9AAD4991784810C00DEA5AB /* CreateTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AAD4981784810C00DEA5AB /* CreateTaskViewController.m */; };
+		B9AAD49A1784810C00DEA5AB /* CreateTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AAD4981784810C00DEA5AB /* CreateTaskViewController.m */; };
+		B9AAD49C1784817700DEA5AB /* CreateTaskViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AAD49B1784817700DEA5AB /* CreateTaskViewTest.m */; };
+		B9AAD49E1784820C00DEA5AB /* CreateTaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AAD49D1784820C00DEA5AB /* CreateTaskView.xib */; };
+		B9AAD49F1784820C00DEA5AB /* CreateTaskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9AAD49D1784820C00DEA5AB /* CreateTaskView.xib */; };
+		B9AEADBE179586EA000F3BE5 /* I18n.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AEADAF17957F7B000F3BE5 /* I18n.m */; };
+		B9AEADBF179586EB000F3BE5 /* I18n.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AEADAF17957F7B000F3BE5 /* I18n.m */; };
+		B9EC6E041785D4FB00A15D55 /* BaseTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EC6E031785D46700A15D55 /* BaseTaskViewController.m */; };
+		B9EC6E051785D4FC00A15D55 /* BaseTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EC6E031785D46700A15D55 /* BaseTaskViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9A2D3F21784462900BBDE34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9A2D3C51784462900BBDE34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9A2D3CC1784462900BBDE34;
+			remoteInfo = "Tasky iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B903D317179FED93003370F3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B903D318179FED93003370F3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		B909B5C2178C1C9C00145B82 /* Tasky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tasky.xcdatamodel; sourceTree = "<group>"; };
+		B909B5C6178C246500145B82 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		B909B5C7178C246500145B82 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		B922584B178C0BB5000C8F11 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		B922584C178C0BB5000C8F11 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		B922584F178C0F21000C8F11 /* CoreDataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTest.m; sourceTree = "<group>"; };
+		B9225851178C10F1000C8F11 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B93DD7BB1785B93100B0DD60 /* TaskCollectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCollectionTest.m; sourceTree = "<group>"; };
+		B93DD7BD1785CE9900B0DD60 /* TaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		B93DD7BE1785CE9900B0DD60 /* TaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
+		B93DD7BF1785CEEF00B0DD60 /* TaskViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewTest.m; sourceTree = "<group>"; };
+		B968382F17845D4D0063F7F6 /* Tasky iOS production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tasky iOS production.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A2D3CD1784462900BBDE34 /* Tasky iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tasky iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A2D3D01784462900BBDE34 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9A2D3D21784462900BBDE34 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9A2D3D41784462900BBDE34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B9A2D3D81784462900BBDE34 /* Tasky iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tasky iOS-Info.plist"; sourceTree = "<group>"; };
+		B9A2D3DA1784462900BBDE34 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9A2D3DC1784462900BBDE34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9A2D3DE1784462900BBDE34 /* Tasky iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tasky iOS-Prefix.pch"; sourceTree = "<group>"; };
+		B9A2D3DF1784462900BBDE34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9A2D3E01784462900BBDE34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9A2D3E21784462900BBDE34 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B9A2D3E41784462900BBDE34 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B9A2D3E61784462900BBDE34 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B9A2D3ED1784462900BBDE34 /* Tasky iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tasky iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A2D3EE1784462900BBDE34 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B9A2D3F61784462900BBDE34 /* Tasky iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tasky iOSTests-Info.plist"; sourceTree = "<group>"; };
+		B9A2D4051784467600BBDE34 /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = "Tasky iOS/Frameworks/OCHamcrestIOS.framework"; sourceTree = "<group>"; };
+		B9A2D4061784467600BBDE34 /* OCMockitoIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockitoIOS.framework; path = "Tasky iOS/Frameworks/OCMockitoIOS.framework"; sourceTree = "<group>"; };
+		B9A2D409178446DD00BBDE34 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B9A2D40A178446DD00BBDE34 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B9A2D40C178446E700BBDE34 /* Tasky iOS production-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tasky iOS production-Info.plist"; sourceTree = "<group>"; };
+		B9A2D4101784476600BBDE34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9A2D4121784482D00BBDE34 /* RootViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewTest.m; sourceTree = "<group>"; };
+		B9A683C61797E2E5002206EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B9A683C91797E314002206EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B9A683CC1797E31C002206EB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B9A723C81796D642004CB2EF /* LocalizableStringsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizableStringsTest.m; sourceTree = "<group>"; };
+		B9AA3D5A1785AF6D00273BBB /* TaskCollection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskCollection.h; sourceTree = "<group>"; };
+		B9AA3D5B1785AF6D00273BBB /* TaskCollection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskCollection.m; sourceTree = "<group>"; };
+		B9AAD4931784770F00DEA5AB /* Task+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Task+Helpers.h"; sourceTree = "<group>"; };
+		B9AAD4941784770F00DEA5AB /* Task+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Task+Helpers.m"; sourceTree = "<group>"; };
+		B9AAD4971784810C00DEA5AB /* CreateTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTaskViewController.h; sourceTree = "<group>"; };
+		B9AAD4981784810C00DEA5AB /* CreateTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTaskViewController.m; sourceTree = "<group>"; };
+		B9AAD49B1784817700DEA5AB /* CreateTaskViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTaskViewTest.m; sourceTree = "<group>"; };
+		B9AAD49D1784820C00DEA5AB /* CreateTaskView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateTaskView.xib; sourceTree = "<group>"; };
+		B9AEADAE17957F7B000F3BE5 /* I18n.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = I18n.h; sourceTree = "<group>"; };
+		B9AEADAF17957F7B000F3BE5 /* I18n.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = I18n.m; sourceTree = "<group>"; };
+		B9EC6E021785D46700A15D55 /* BaseTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTaskViewController.h; sourceTree = "<group>"; };
+		B9EC6E031785D46700A15D55 /* BaseTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTaskViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B968382217845D4D0063F7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B968382317845D4D0063F7F6 /* UIKit.framework in Frameworks */,
+				B9225853178C10FC000C8F11 /* CoreData.framework in Frameworks */,
+				B968382417845D4D0063F7F6 /* Foundation.framework in Frameworks */,
+				B968382517845D4D0063F7F6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A2D3CA1784462900BBDE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9225852178C10F1000C8F11 /* CoreData.framework in Frameworks */,
+				B9A2D3D11784462900BBDE34 /* UIKit.framework in Frameworks */,
+				B9A2D3D31784462900BBDE34 /* Foundation.framework in Frameworks */,
+				B9A2D3D51784462900BBDE34 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A2D3E91784462900BBDE34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A2D3EF1784462900BBDE34 /* SenTestingKit.framework in Frameworks */,
+				B9225854178C10FD000C8F11 /* CoreData.framework in Frameworks */,
+				B9A2D3F01784462900BBDE34 /* UIKit.framework in Frameworks */,
+				B9A2D3F11784462900BBDE34 /* Foundation.framework in Frameworks */,
+				B9A2D4071784467600BBDE34 /* OCHamcrestIOS.framework in Frameworks */,
+				B9A2D4081784467600BBDE34 /* OCMockitoIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B903D316179FED93003370F3 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				B903D317179FED93003370F3 /* Icon.png */,
+				B903D318179FED93003370F3 /* Icon@2x.png */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		B922584A178C0B8F000C8F11 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B922584B178C0BB5000C8F11 /* CoreDataHelper.h */,
+				B922584C178C0BB5000C8F11 /* CoreDataHelper.m */,
+				B9AEADAE17957F7B000F3BE5 /* I18n.h */,
+				B9AEADAF17957F7B000F3BE5 /* I18n.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B9A2D3C41784462900BBDE34 = {
+			isa = PBXGroup;
+			children = (
+				B903D316179FED93003370F3 /* Art */,
+				B9A2D3D61784462900BBDE34 /* Tasky iOS */,
+				B9A2D3F41784462900BBDE34 /* Tasky iOSTests */,
+				B9A2D3CF1784462900BBDE34 /* Frameworks */,
+				B9A2D3CE1784462900BBDE34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9A2D3CE1784462900BBDE34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9A2D3CD1784462900BBDE34 /* Tasky iOS.app */,
+				B9A2D3ED1784462900BBDE34 /* Tasky iOSTests.octest */,
+				B968382F17845D4D0063F7F6 /* Tasky iOS production.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9A2D3CF1784462900BBDE34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9225851178C10F1000C8F11 /* CoreData.framework */,
+				B9A2D3D01784462900BBDE34 /* UIKit.framework */,
+				B9A2D3D21784462900BBDE34 /* Foundation.framework */,
+				B9A2D3D41784462900BBDE34 /* CoreGraphics.framework */,
+				B9A2D4051784467600BBDE34 /* OCHamcrestIOS.framework */,
+				B9A2D4061784467600BBDE34 /* OCMockitoIOS.framework */,
+				B9A2D3EE1784462900BBDE34 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9A2D3D61784462900BBDE34 /* Tasky iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B9A2D3DF1784462900BBDE34 /* AppDelegate.h */,
+				B9A2D3E01784462900BBDE34 /* AppDelegate.m */,
+				B9A2D40F1784476600BBDE34 /* Main.storyboard */,
+				B922584A178C0B8F000C8F11 /* Helpers */,
+				B9AAD492178476DB00DEA5AB /* Models */,
+				B9AAD491178476BD00DEA5AB /* ViewControllers */,
+				B9A2D3D71784462900BBDE34 /* Supporting Files */,
+			);
+			path = "Tasky iOS";
+			sourceTree = "<group>";
+		};
+		B9A2D3D71784462900BBDE34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9A683C81797E314002206EB /* Localizable.strings */,
+				B9A2D3D81784462900BBDE34 /* Tasky iOS-Info.plist */,
+				B9A2D40C178446E700BBDE34 /* Tasky iOS production-Info.plist */,
+				B9A2D3D91784462900BBDE34 /* InfoPlist.strings */,
+				B9A2D3DC1784462900BBDE34 /* main.m */,
+				B9A2D3DE1784462900BBDE34 /* Tasky iOS-Prefix.pch */,
+				B9A2D3E21784462900BBDE34 /* Default.png */,
+				B9A2D3E41784462900BBDE34 /* Default@2x.png */,
+				B9A2D3E61784462900BBDE34 /* Default-568h@2x.png */,
+				B909B5C1178C1C9C00145B82 /* Tasky.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9A2D3F41784462900BBDE34 /* Tasky iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B922584F178C0F21000C8F11 /* CoreDataTest.m */,
+				B9AAD49B1784817700DEA5AB /* CreateTaskViewTest.m */,
+				B9A723C81796D642004CB2EF /* LocalizableStringsTest.m */,
+				B9A2D4121784482D00BBDE34 /* RootViewTest.m */,
+				B93DD7BB1785B93100B0DD60 /* TaskCollectionTest.m */,
+				B93DD7BF1785CEEF00B0DD60 /* TaskViewTest.m */,
+				B9A2D3F51784462900BBDE34 /* Supporting Files */,
+			);
+			path = "Tasky iOSTests";
+			sourceTree = "<group>";
+		};
+		B9A2D3F51784462900BBDE34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9A683C51797E2E5002206EB /* InfoPlist.strings */,
+				B9A2D3F61784462900BBDE34 /* Tasky iOSTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9AAD491178476BD00DEA5AB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B9A2D409178446DD00BBDE34 /* RootViewController.h */,
+				B9A2D40A178446DD00BBDE34 /* RootViewController.m */,
+				B9AAD4971784810C00DEA5AB /* CreateTaskViewController.h */,
+				B9AAD4981784810C00DEA5AB /* CreateTaskViewController.m */,
+				B9AAD49D1784820C00DEA5AB /* CreateTaskView.xib */,
+				B93DD7BD1785CE9900B0DD60 /* TaskViewController.h */,
+				B93DD7BE1785CE9900B0DD60 /* TaskViewController.m */,
+				B9EC6E021785D46700A15D55 /* BaseTaskViewController.h */,
+				B9EC6E031785D46700A15D55 /* BaseTaskViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B9AAD492178476DB00DEA5AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B909B5C6178C246500145B82 /* Task.h */,
+				B909B5C7178C246500145B82 /* Task.m */,
+				B9AAD4931784770F00DEA5AB /* Task+Helpers.h */,
+				B9AAD4941784770F00DEA5AB /* Task+Helpers.m */,
+				B9AA3D5A1785AF6D00273BBB /* TaskCollection.h */,
+				B9AA3D5B1785AF6D00273BBB /* TaskCollection.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B968381D17845D4D0063F7F6 /* Tasky iOS production */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B968382C17845D4D0063F7F6 /* Build configuration list for PBXNativeTarget "Tasky iOS production" */;
+			buildPhases = (
+				B968381E17845D4D0063F7F6 /* Sources */,
+				B968382217845D4D0063F7F6 /* Frameworks */,
+				B968382617845D4D0063F7F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tasky iOS production";
+			productName = "Tasky iOS";
+			productReference = B968382F17845D4D0063F7F6 /* Tasky iOS production.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9A2D3CC1784462900BBDE34 /* Tasky iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A2D3FF1784462900BBDE34 /* Build configuration list for PBXNativeTarget "Tasky iOS" */;
+			buildPhases = (
+				B9A2D3C91784462900BBDE34 /* Sources */,
+				B9A2D3CA1784462900BBDE34 /* Frameworks */,
+				B9A2D3CB1784462900BBDE34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tasky iOS";
+			productName = "Tasky iOS";
+			productReference = B9A2D3CD1784462900BBDE34 /* Tasky iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9A2D3EC1784462900BBDE34 /* Tasky iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A2D4021784462900BBDE34 /* Build configuration list for PBXNativeTarget "Tasky iOSTests" */;
+			buildPhases = (
+				B9A2D3E81784462900BBDE34 /* Sources */,
+				B9A2D3E91784462900BBDE34 /* Frameworks */,
+				B9A2D3EA1784462900BBDE34 /* Resources */,
+				B9A2D3EB1784462900BBDE34 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9A2D3F31784462900BBDE34 /* PBXTargetDependency */,
+			);
+			name = "Tasky iOSTests";
+			productName = "Tasky iOSTests";
+			productReference = B9A2D3ED1784462900BBDE34 /* Tasky iOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9A2D3C51784462900BBDE34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Julian James";
+				TargetAttributes = {
+					B9A2D3CC1784462900BBDE34 = {
+						DevelopmentTeam = 829UR8UJLB;
+					};
+					B9A2D3EC1784462900BBDE34 = {
+						TestTargetID = B9A2D3CC1784462900BBDE34;
+					};
+				};
+			};
+			buildConfigurationList = B9A2D3C81784462900BBDE34 /* Build configuration list for PBXProject "Tasky iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+			);
+			mainGroup = B9A2D3C41784462900BBDE34;
+			productRefGroup = B9A2D3CE1784462900BBDE34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9A2D3CC1784462900BBDE34 /* Tasky iOS */,
+				B968381D17845D4D0063F7F6 /* Tasky iOS production */,
+				B9A2D3EC1784462900BBDE34 /* Tasky iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B968382617845D4D0063F7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B968382717845D4D0063F7F6 /* InfoPlist.strings in Resources */,
+				B9AAD49F1784820C00DEA5AB /* CreateTaskView.xib in Resources */,
+				B903D31A179FED93003370F3 /* Icon.png in Resources */,
+				B968382817845D4D0063F7F6 /* Default.png in Resources */,
+				B968382917845D4D0063F7F6 /* Default@2x.png in Resources */,
+				B903D31C179FED93003370F3 /* Icon@2x.png in Resources */,
+				B9A683CB1797E314002206EB /* Localizable.strings in Resources */,
+				B968382A17845D4D0063F7F6 /* Default-568h@2x.png in Resources */,
+				B968382B17845D4D0063F7F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A2D3CB1784462900BBDE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A2D3DB1784462900BBDE34 /* InfoPlist.strings in Resources */,
+				B9AAD49E1784820C00DEA5AB /* CreateTaskView.xib in Resources */,
+				B903D319179FED93003370F3 /* Icon.png in Resources */,
+				B9A2D3E31784462900BBDE34 /* Default.png in Resources */,
+				B9A2D3E51784462900BBDE34 /* Default@2x.png in Resources */,
+				B903D31B179FED93003370F3 /* Icon@2x.png in Resources */,
+				B9A683CA1797E314002206EB /* Localizable.strings in Resources */,
+				B9A2D3E71784462900BBDE34 /* Default-568h@2x.png in Resources */,
+				B9A2D4111784476600BBDE34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A2D3EA1784462900BBDE34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A683C71797E2E5002206EB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9A2D3EB1784462900BBDE34 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B968381E17845D4D0063F7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EC6E051785D4FC00A15D55 /* BaseTaskViewController.m in Sources */,
+				B9AA3D5D1785AF7100273BBB /* TaskCollection.m in Sources */,
+				B9AAD4961784770F00DEA5AB /* Task+Helpers.m in Sources */,
+				B909B5C9178C246500145B82 /* Task.m in Sources */,
+				B922584E178C0BB5000C8F11 /* CoreDataHelper.m in Sources */,
+				B968381F17845D4D0063F7F6 /* main.m in Sources */,
+				B93DD7C21785CEF900B0DD60 /* TaskViewController.m in Sources */,
+				B9AAD49A1784810C00DEA5AB /* CreateTaskViewController.m in Sources */,
+				B968382017845D4D0063F7F6 /* AppDelegate.m in Sources */,
+				B9AEADBF179586EB000F3BE5 /* I18n.m in Sources */,
+				B909B5C4178C1CE400145B82 /* Tasky.xcdatamodeld in Sources */,
+				B968382117845D4D0063F7F6 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A2D3C91784462900BBDE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9EC6E041785D4FB00A15D55 /* BaseTaskViewController.m in Sources */,
+				B9AA3D5C1785AF7000273BBB /* TaskCollection.m in Sources */,
+				B9AAD4951784770F00DEA5AB /* Task+Helpers.m in Sources */,
+				B909B5C8178C246500145B82 /* Task.m in Sources */,
+				B922584D178C0BB5000C8F11 /* CoreDataHelper.m in Sources */,
+				B9A2D3DD1784462900BBDE34 /* main.m in Sources */,
+				B93DD7C11785CEF800B0DD60 /* TaskViewController.m in Sources */,
+				B9AAD4991784810C00DEA5AB /* CreateTaskViewController.m in Sources */,
+				B9A2D3E11784462900BBDE34 /* AppDelegate.m in Sources */,
+				B9AEADBE179586EA000F3BE5 /* I18n.m in Sources */,
+				B909B5C3178C1CE300145B82 /* Tasky.xcdatamodeld in Sources */,
+				B9A2D40B178446DD00BBDE34 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A2D3E81784462900BBDE34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A2D4131784482D00BBDE34 /* RootViewTest.m in Sources */,
+				B9A723C91796D642004CB2EF /* LocalizableStringsTest.m in Sources */,
+				B93DD7BC1785B93100B0DD60 /* TaskCollectionTest.m in Sources */,
+				B909B5C5178C1CE400145B82 /* Tasky.xcdatamodeld in Sources */,
+				B9AAD49C1784817700DEA5AB /* CreateTaskViewTest.m in Sources */,
+				B9225850178C0F21000C8F11 /* CoreDataTest.m in Sources */,
+				B93DD7C01785CEEF00B0DD60 /* TaskViewTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9A2D3F31784462900BBDE34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9A2D3CC1784462900BBDE34 /* Tasky iOS */;
+			targetProxy = B9A2D3F21784462900BBDE34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9A2D3D91784462900BBDE34 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9A2D3DA1784462900BBDE34 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B9A2D40F1784476600BBDE34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9A2D4101784476600BBDE34 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9A683C51797E2E5002206EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9A683C61797E2E5002206EB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B9A683C81797E314002206EB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9A683C91797E314002206EB /* en */,
+				B9A683CC1797E31C002206EB /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B968382D17845D4D0063F7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/HockeySDK-iOS-3.0.0/HockeySDK.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tasky iOS/Tasky iOS-Prefix.pch";
+				INFOPLIST_FILE = "Tasky iOS production-Info.plist";
+				PRODUCT_NAME = "Tasky iOS production";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B968382E17845D4D0063F7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/HockeySDK-iOS-3.0.0/HockeySDK.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tasky iOS/Tasky iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "PRODUCTION=1";
+				INFOPLIST_FILE = "Tasky iOS production-Info.plist";
+				PRODUCT_NAME = "Tasky iOS production";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B9A2D3FD1784462900BBDE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9A2D3FE1784462900BBDE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9A2D4001784462900BBDE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Julian James (CY288GMV38)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/HockeySDK-iOS-3.0.0/HockeySDK.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tasky iOS/Tasky iOS-Prefix.pch";
+				INFOPLIST_FILE = "Tasky iOS/Tasky iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B9A2D4011784462900BBDE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Made By Many Limited";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/HockeySDK-iOS-3.0.0/HockeySDK.embeddedframework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tasky iOS/Tasky iOS-Prefix.pch";
+				INFOPLIST_FILE = "Tasky iOS/Tasky iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B9A2D4031784462900BBDE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tasky iOS.app/Tasky iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/Tasky iOS/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tasky iOS/Tasky iOS-Prefix.pch";
+				INFOPLIST_FILE = "Tasky iOSTests/Tasky iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B9A2D4041784462900BBDE34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tasky iOS.app/Tasky iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"\"$(SRCROOT)/Tasky iOS/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tasky iOS/Tasky iOS-Prefix.pch";
+				INFOPLIST_FILE = "Tasky iOSTests/Tasky iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B968382C17845D4D0063F7F6 /* Build configuration list for PBXNativeTarget "Tasky iOS production" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B968382D17845D4D0063F7F6 /* Debug */,
+				B968382E17845D4D0063F7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A2D3C81784462900BBDE34 /* Build configuration list for PBXProject "Tasky iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A2D3FD1784462900BBDE34 /* Debug */,
+				B9A2D3FE1784462900BBDE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A2D3FF1784462900BBDE34 /* Build configuration list for PBXNativeTarget "Tasky iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A2D4001784462900BBDE34 /* Debug */,
+				B9A2D4011784462900BBDE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A2D4021784462900BBDE34 /* Build configuration list for PBXNativeTarget "Tasky iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A2D4031784462900BBDE34 /* Debug */,
+				B9A2D4041784462900BBDE34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B909B5C1178C1C9C00145B82 /* Tasky.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B909B5C2178C1C9C00145B82 /* Tasky.xcdatamodel */,
+			);
+			currentVersion = B909B5C2178C1C9C00145B82 /* Tasky.xcdatamodel */;
+			path = Tasky.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B9A2D3C51784462900BBDE34 /* Project object */;
+}

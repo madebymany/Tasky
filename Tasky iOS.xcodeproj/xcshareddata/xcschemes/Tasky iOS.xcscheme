@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0500"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "echo&#10;echo &quot;Pre-action script&quot;&#10;echo&#10;cache=${CACHE_ROOT}&#10;strings_path=${cache%/*/*/*/*}/T&#10;                            &#10;wti init pTYtGGZ5F_Vz71Sf6TXQvA&#10;wti pull --all&#10;files=&quot;*.strings&quot;&#10;for f in $files&#10;do&#10;file=&quot;${f%.*}&quot;&#10;if [ $file == &quot;Localizable&quot; ]; then&#10;mv &quot;$strings_path/$file.strings&quot; &quot;${PROJECT_DIR}/Tasky iOS/en.lproj/Localizable.strings&quot;&#10;else&#10;locale=&quot;${file##*.}&quot;&#10;mv &quot;$strings_path/$file.strings&quot; &quot;${PROJECT_DIR}/Tasky iOS/$locale.lproj/Localizable.strings&quot;&#10;fi&#10;done&#10;buildNumber=`/bin/date +%Y%m%d%H%M%S`&#10;hexNumber=`echo &quot;obase=16;ibase=10; $buildNumber&quot; | bc`&#10;/usr/libexec/PlistBuddy -c &quot;Set :CFBundleVersion $hexNumber&quot; &quot;${PROJECT_DIR}/${INFOPLIST_FILE}&quot;&#10;&#10;echo&#10;echo &quot;End of Pre-action script&quot;&#10;echo&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "B9A2D3CC1784462900BBDE34"
+                     BuildableName = "Tasky iOS.app"
+                     BlueprintName = "Tasky iOS"
+                     ReferencedContainer = "container:Tasky iOS.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B9A2D3CC1784462900BBDE34"
+               BuildableName = "Tasky iOS.app"
+               BlueprintName = "Tasky iOS"
+               ReferencedContainer = "container:Tasky iOS.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B9A2D3EC1784462900BBDE34"
+               BuildableName = "Tasky iOSTests.octest"
+               BlueprintName = "Tasky iOSTests"
+               ReferencedContainer = "container:Tasky iOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B9A2D3CC1784462900BBDE34"
+            BuildableName = "Tasky iOS.app"
+            BlueprintName = "Tasky iOS"
+            ReferencedContainer = "container:Tasky iOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B9A2D3CC1784462900BBDE34"
+            BuildableName = "Tasky iOS.app"
+            BlueprintName = "Tasky iOS"
+            ReferencedContainer = "container:Tasky iOS.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B9A2D3CC1784462900BBDE34"
+            BuildableName = "Tasky iOS.app"
+            BlueprintName = "Tasky iOS"
+            ReferencedContainer = "container:Tasky iOS.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "NO">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "echo&#10;echo &quot;Post-action script&quot;&#10;echo&#10;APP=&quot;$ARCHIVE_PRODUCTS_PATH$INSTALL_PATH/$WRAPPER_NAME&quot;&#10;latest=$(ls -1td /Library/Server/Xcode/Data/BotRuns/Bot* | head -n 1)&#10;echo ${latest}&#10;substringOn=0&#10;blankLineCount=0&#10;commitsString=$(cat ${latest}/output/commit*.log |&#10;awk &apos;{&#10;if (match($0, &quot;CommitDate&quot;) == 1) {&#10;    substringOn=1&#10;    blankLineCount=0&#10;}&#10;if (substringOn==1) {&#10;    if ($0 != &quot;&quot;) {&#10;        if (blankLineCount==1)  {&#10;            sub(/^[ \t]+/, &quot;&quot;,$0)&#10;            print $0&#10;        }&#10;    } else&#10;    blankLineCount++&#10;}&#10;}&apos;)&#10;&#10;rm /tmp/Tasky.ipa&#10;/usr/bin/xcrun -sdk iphoneos PackageApplication &quot;${APP}&quot; -o /tmp/Tasky.ipa&#10;&#10;instruments -w device_UDID -t &quot;/Applications/Xcode.app/Contents/Applications/Instruments.app/Contents/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate&quot; &quot;Tasky iOS&quot; -e UIASCRIPT &quot;${PROJECT_DIR}/simpletest.js&quot; -e UIARESULTSPATH /tmp | grep &quot;Error&quot; &gt; /tmp/ui_errors.txt&#10;&#10;filesize=$(stat -f &quot;%z&quot; /tmp/ui_errors.txt)&#10;&#10;rm -rf /tmp/Run*&#10;&#10;if [ $filesize = &quot;0&quot; ]; then&#10;&#10;    echo&#10;    echo &quot;UIAutomation passed&quot;&#10;    echo&#10;&#10;    curl \&#10;    -F &quot;status=2&quot; \&#10;    -F &quot;notify=1&quot; \&#10;    -F &quot;notes=${commitsString}&quot; \&#10;    -F &quot;notes_type=0&quot; \&#10;    -F &quot;ipa=@/tmp/Tasky.ipa&quot; \&#10;    -H &quot;X-HockeyAppToken: company_id_token&quot; \&#10;    https://rink.hockeyapp.net/api/2/apps/app_id/app_versions/upload&#10;&#10;else&#10;    echo&#10;    echo &quot;UIAutomation has errors:&quot;&#10;    cat /tmp/ui_errors.txt&#10;    echo&#10;    kill $PPID&#10;    exit 1&#10;fi&#10;&#10;echo&#10;echo &quot;End of Post-action script&quot;&#10;echo&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "B9A2D3CC1784462900BBDE34"
+                     BuildableName = "Tasky iOS.app"
+                     BlueprintName = "Tasky iOS"
+                     ReferencedContainer = "container:Tasky iOS.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+   </ArchiveAction>
+</Scheme>
